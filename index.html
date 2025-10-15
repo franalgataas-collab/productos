@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combos Deportivos - Sol de Abasto</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .logo h1 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .logo p {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .combo-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #3498db;
+        }
+        
+        .combo-card.premium {
+            border-left-color: #e74c3c;
+        }
+        
+        .combo-card.performance {
+            border-left-color: #f39c12;
+        }
+        
+        .combo-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .combo-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .combo-badge {
+            background: #3498db;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        
+        .combo-badge.premium {
+            background: #e74c3c;
+        }
+        
+        .combo-badge.performance {
+            background: #f39c12;
+        }
+        
+        .product-list {
+            list-style: none;
+            margin-bottom: 10px;
+        }
+        
+        .product-list li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ecf0f1;
+            font-size: 14px;
+        }
+        
+        .gift {
+            background: #fff3cd;
+            padding: 8px;
+            border-radius: 5px;
+            font-size: 13px;
+            margin-top: 10px;
+            text-align: center;
+            border: 1px dashed #ffeaa7;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+        
+        select, input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ecf0f1;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border 0.3s;
+        }
+        
+        select:focus, input:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        
+        .btn {
+            background: #27ae60;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #219a52;
+        }
+        
+        .whatsapp-icon {
+            display: inline-block;
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .address {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <h1>Sol de Abasto</h1>
+            <p>Nutrición Deportiva Especializada</p>
+        </div>
+        
+        <div class="combo-card">
+            <div class="combo-header">
+                <div class="combo-title">COMBO ENERGÍA BÁSICA</div>
+                <div class="combo-badge">INICIACIÓN</div>
+            </div>
+            <ul class="product-list">
+                <li>• Pasta de Maní (380g)</li>
+                <li>• Granola con Arándanos (500g)</li>
+                <li>• Semillas de Chía o Lino (500g)</li>
+                <li>• Barritas KI-BAR Protein (3 unidades)</li>
+                <li>• Omega 3 (30 cápsulas)</li>
+            </ul>
+            <div class="gift">
+                🎁 REGALO: Mix de Frutos Secos (250g)
+            </div>
+        </div>
+        
+        <div class="combo-card performance">
+            <div class="combo-header">
+                <div class="combo-title">COMBO PERFORMANCE PLUS</div>
+                <div class="combo-badge performance">AVANZADO</div>
+            </div>
+            <ul class="product-list">
+                <li>• Creatina Monohidratada (300g)</li>
+                <li>• Maca en Polvo (500g)</li>
+                <li>• Colágeno Hidrolizado (360g)</li>
+                <li>• Mix de Semillas Premium (500g)</li>
+                <li>• Barritas Protein KI-BAR (Caja 7 unid.)</li>
+            </ul>
+            <div class="gift">
+                🎁 REGALO: Arroz Yamaní + Porotos Negros (500g c/u)
+            </div>
+        </div>
+        
+        <div class="combo-card premium">
+            <div class="combo-header">
+                <div class="combo-title">COMBO MUSCLE PREMIUM</div>
+                <div class="combo-badge premium">PRO</div>
+            </div>
+            <ul class="product-list">
+                <li>• Whey Protein EDN (sabor a elección)</li>
+                <li>• BCAA 102 Sport</li>
+                <li>• Ginseng Rojo Coreano (60 comp.)</li>
+                <li>• Moringa (90 comprimidos)</li>
+                <li>• Quinoa Pop + Pasta de Maní</li>
+                <li>• Aceite de Coco Virgen (500ml)</li>
+            </ul>
+            <div class="gift">
+                🎁 REGALO: Super Mix Frutos Secos Premium + Arroz Integral + Lentejas (500g c/u)
+            </div>
+        </div>
+        
+        <form id="comboForm">
+            <div class="form-group">
+                <label for="combo">Selecciona tu combo ideal:</label>
+                <select id="combo" required>
+                    <option value="">-- Elige tu combo --</option>
+                    <option value="Energía Básica">COMBO ENERGÍA BÁSICA</option>
+                    <option value="Performance Plus">COMBO PERFORMANCE PLUS</option>
+                    <option value="Muscle Premium">COMBO MUSCLE PREMIUM</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Nombre completo:</label>
+                <input type="text" id="name" required placeholder="Tu nombre">
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" required placeholder="Ej: 3413884851">
+            </div>
+            
+            <div class="form-group">
+                <label for="consultation">Consulta adicional:</label>
+                <textarea id="consultation" rows="3" placeholder="¿Necesitás asesoramiento especial? Contanos tus objetivos..."></textarea>
+            </div>
+            
+            <button type="submit" class="btn">
+                <span class="whatsapp-icon">📱</span>
+                CONSULTAR POR WHATSAPP
+            </button>
+        </form>
+        
+        <div class="address">
+            <p>📍 Riobamba 1777 - Consultá por envíos</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('comboForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const combo = document.getElementById('combo').value;
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const consultation = document.getElementById('consultation').value;
+            
+            const message = `¡Hola Sol de Abasto! 👋\n\nMe interesa el *${combo}*\n\n*Mis datos:*\n📝 Nombre: ${name}\n📞 Teléfono: ${phone}\n\n*Mi consulta:*\n${consultation || 'Sin consulta adicional'}\n\n📍 Riobamba 1777\n⚡ Consulto por envíos y disponibilidad`;
+            
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappURL = `https://wa.me/5493413884851?text=${encodedMessage}`;
+            
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+</body>
+</html>
